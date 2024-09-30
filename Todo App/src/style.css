@@ -1,0 +1,17 @@
+
+
+input{
+    width:100%;
+}
+
+.itemsContainer{
+    text-align:left;
+}
+
+.kg-row{
+    margin:10px 5px;
+}
+
+.kg-btn{
+    min-width:194px;
+}
