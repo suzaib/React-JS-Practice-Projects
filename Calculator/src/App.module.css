@@ -1,0 +1,12 @@
+.container{
+    width:27vw;
+    margin:50px auto;
+    padding:none;
+    height:70vh;
+    display:flex;
+    flex-direction:column;
+    border:2px solid gray;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+}

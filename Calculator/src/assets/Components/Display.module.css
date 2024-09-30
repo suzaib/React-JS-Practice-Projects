@@ -1,0 +1,9 @@
+.display{
+    width:23vw;
+    height:12vh;
+    border:2px solid black;
+    border-radius:10px;
+    margin:50px 0px 20px;
+    font-size:30px;
+    font-weight:550p;
+}
