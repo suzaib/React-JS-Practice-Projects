@@ -1,5 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+//Importing the components
 import ClockHeading from "./components/ClockHeading";
 import ClockSlogan from "./components/ClockSlogan";
 import CurrentTime from "./components/CurrentTime";
