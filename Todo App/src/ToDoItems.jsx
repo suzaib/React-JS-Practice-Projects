@@ -1,7 +1,11 @@
 import React from 'react'
+import { useContext } from 'react'
+
+//Importing our components
 import { ToDoItemsContext } from './assets/store/toDo-items-store'
 import TodoItem from './assets/Components/TodoItem'
-import { useContext } from 'react'
+
+//Importing styles
 import styles from "./ToDoItems.module.css"
 
 const ToDoItems = () => {
