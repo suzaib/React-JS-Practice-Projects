@@ -1,5 +1,7 @@
 import React from 'react'
 import { useContext } from 'react';
+
+//Importing itemsContext from context store
 import { ToDoItemsContext } from '../store/toDo-items-store'
 
 const WelcomeMsg = () => {
