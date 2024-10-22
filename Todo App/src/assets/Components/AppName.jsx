@@ -1,3 +1,4 @@
+//Importing styles
 import styles from "./AppName.module.css";
 const AppName = () => {
   return (
