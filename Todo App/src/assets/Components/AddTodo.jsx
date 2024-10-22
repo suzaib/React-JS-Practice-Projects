@@ -1,12 +1,15 @@
-import { IoMdAddCircleOutline } from "react-icons/io";
 import { useRef,useContext, useState } from "react";
+
+//Importing react-icon
+import { IoMdAddCircleOutline } from "react-icons/io";
+
+//Importing ToDoItemsContext from context store
 import { ToDoItemsContext } from "../store/toDo-items-store";
-
-
-
 const AddTodo = () => {
 
   const {addNewItem}=useContext(ToDoItemsContext)
+
+  //We add a dynamic class based on these values. The class added gives the input box animation effects to show that they are empty
   const [vibrateName,setVibrateName]=useState(false);
   const [vibrateDate,setVibrateDate]=useState(false);
 
@@ -15,15 +18,23 @@ const AddTodo = () => {
 
 
   const handleAddButtonClicked=(event)=>{
+
+    //Preventing the page from reloading as that is the default behaviour of the form when submitted
     event.preventDefault();
+
+    //Only if the name and date input is not empty , then we add a new task
     if(toDoName.current.value && dueDate.current.value){
       addNewItem(toDoName.current.value,dueDate.current.value);
       toDoName.current.value="";
       dueDate.current.value="";  
     }
+
+    //Otherwise we show the animation made by setting the VibrateName/Date as true
     else{
       if(!toDoName.current.value){
         setVibrateName(true);
+
+        //SetTimeout is used to reset the state value of vibrateName/Date as false(after the animation has finished)
         setTimeout(()=>{
         setVibrateName(false)
       },300)
