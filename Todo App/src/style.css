@@ -1,0 +1,67 @@
+
+.kg-row div{
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+    white-space:normal;
+}
+input{
+    width:100%;
+}
+
+.itemsContainer{
+    text-align:left;
+}
+
+.kg-row{
+    margin:10px 5px;
+}
+
+.kg-btn{
+    min-width:194px;
+    transform:translateY(-10%);
+}
+
+.addIcon{
+    transform:translateY(-15%)
+}
+
+.vibrate{
+    animation: vibration 0.1s cubic-bezier(0.4, 0, 0.6, 1) 3;
+}
+
+@keyframes vibration{
+    0%{
+        transform:translateX(0px);
+        outline:1px solid red;
+    }
+    25%{
+        transform:translateX(20px);
+        outline:1px solid red;
+    }
+    50%{
+        transform:translateX(0px);
+        outline:1px solid red;
+    }
+    75%{
+        transform:translateX(-20px);
+        outline:1px solid red;
+    }
+    100%{
+        transform:translateX(0px);
+        outline:1px solid red;
+    }
+
+}
+
+@media (max-width:450px){
+    input{
+        font-size:14px;
+        height:25px;
+    }
+    input[type="date"]{
+        font-size:12px;
+    }
+    input::placeholder{
+        font-size:14px;
+    }
+}
