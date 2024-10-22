@@ -1,6 +1,12 @@
 import React from 'react'
+
+//Importing react-icon
 import { MdDelete } from "react-icons/md";
+
+//Importing useContext to use context api
 import { useContext } from 'react';
+
+//Importing items context from context store
 import { ToDoItemsContext } from '../store/toDo-items-store';
 
 const TodoItem = ({task,date}) => {
