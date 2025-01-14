@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg,yellow,red);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #faeea4;
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 4px solid #1a73e8;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .text{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    margin: 15px auto;
+    padding: 15px 25px;
+    background-color: #686060;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .text:hover {
+    background-color: #f0f4ff;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem;
+    }
+    .lead {
+      font-size: 1.2rem;
+      padding: 12px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2.2rem;
+      border-bottom-width: 3px;
+    }
+    .lead {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  }
+  
