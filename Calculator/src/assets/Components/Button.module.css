@@ -1,0 +1,36 @@
+.btn {
+    background-color: #e0f7fa;
+    color: #006064; 
+    border: 2px solid #b2ebf2; 
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #b2ebf2; 
+    color: #004d40; 
+    transform: scale(1.1);
+  }
+  
+  .btn:active {
+    background-color: #80deea; 
+    transform: scale(0.95);
+  }
+
+  @media(max-width:360px){
+    .btn{
+        width:40px;
+        height:40px;
+        margin:3px;
+        padding:5px;
+        font-size:0.8rem;
+    }
+}
+  
