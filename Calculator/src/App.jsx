@@ -9,6 +9,7 @@ function App() {
   const [displayVal,setDisplayVal]=useState("");
   
   const buttons=["9","8","7","/","6","5","4","*","3","2","1","-",".","0","=","+","CE","C"]
+  const operators=["+","-","*","/","."];
 
   //As the buttion is clicked we first check the type of button
   //Depending on type we do our operation(print result if its = or clear if its C or CE etc)
@@ -27,8 +28,17 @@ function App() {
         setDisplayVal("")
       }
     }
+
+    //Here we handle that expressions like "9*/+2" should not be printed
+    //We make sure two operators can't be clicked together after one another
     else{
-      setDisplayVal((prevDisplayVal)=>prevDisplayVal+btnClicked)
+      let lastChar=displayVal[displayVal.length-1];
+      if(operators.includes(lastChar) && operators.includes(btnClicked)){
+        //Do Nothing
+      }
+      else{
+        setDisplayVal((prevDisplayVal)=>prevDisplayVal+btnClicked);
+      }
     }
   }
 
