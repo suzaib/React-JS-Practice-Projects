@@ -21,9 +21,6 @@ const ProductPage = () => {
     const lensX = Math.max(0,Math.min(x-lensSize/2,maxX));
     const lensY = Math.max(0,Math.min(y-lensSize/2,maxY));
 
-    // const bgX = (x / rect.width) * 100;
-    // const bgY = (y / rect.height) * 100;
-
     setLensStyle({
       display: "block",
       left: `${lensX}px`,
